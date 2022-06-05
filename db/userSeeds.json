@@ -1,0 +1,44 @@
+[
+    {
+        "firstname": "Chandler", 
+        "lastname": "Bing", 
+        "email": "chandler.bing@gmail.com",
+        "password": "bing",
+        "cart": []
+    },
+    {
+        "firstname": "Joe", 
+        "lastname": "Tribbiani", 
+        "email": "joe.tribbiani@gmail.com",
+        "password": "pizza", 
+        "cart": []
+    },
+    {
+        "firstname": "Ross", 
+        "lastname": "Geller", 
+        "email": "ross.geller@gmail.com",
+        "password": "pivot",
+        "cart": [] 
+    },
+    {
+        "firstname": "Rachel", 
+        "lastname": "Green", 
+        "email": "rachel.green@gmail.com",
+        "password": "rachem",
+        "cart": [] 
+    },
+    {
+        "firstname": "Monica", 
+        "lastname": "Geller", 
+        "email": "monica.geller@gmail.com",
+        "password": "ilovecleaning",
+        "cart": [] 
+    },
+    {
+        "firstname": "Phoebe", 
+        "lastname": "Buffay", 
+        "email": "phoebe.buffay@gmail.com",
+        "password": "guitar", 
+        "cart": [] 
+    }
+]
