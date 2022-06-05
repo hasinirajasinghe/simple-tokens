@@ -1,0 +1,29 @@
+{
+  "name": "simple-tokens",
+  "version": "1.0.0",
+  "description": "E-commerce business website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasinirajasinghe/simple-tokens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasinirajasinghe/simple-tokens/issues"
+  },
+  "homepage": "https://github.com/hasinirajasinghe/simple-tokens#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0"
+  }
+}

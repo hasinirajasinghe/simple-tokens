@@ -1,2 +1,2 @@
 # simple_tokens
-E-commerce business website 
+E-commerce Business Website 
