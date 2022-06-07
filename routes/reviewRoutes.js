@@ -5,8 +5,8 @@ const reviewCtrl = require('../controllers/reviewsController')
 // Fetches all the reviews 
 router.get('/', reviewCtrl.getAllReviews)
 
-// Offers for to create new review review
-router.get('/new', reviewCtrl.showNewReviewPage)
+// Offers form to create new review review
+router.get('/:productId/new', reviewCtrl.showNewReviewPage)
 
 // Creates new review 
 router.post('/', reviewCtrl.createNewReview)

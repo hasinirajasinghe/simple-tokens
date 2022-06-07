@@ -4,14 +4,15 @@ const PORT = 4000
 const morgan = require('morgan')
 const path = require('path')
 const methodsOverride = require('method-override')
-const expressEjsLayouts = require('express-ejs-layouts')
+// const expressEjsLayouts = require('express-ejs-layouts')
 const userRoutes = require('./routes/userRoutes')
 const productRoutes = require('./routes/productRoutes')
 const reviewRoutes = require('./routes/reviewRoutes')
 
 require('./db/connection')
 
-app.use(expressEjsLayouts)
+// TODO: Why doesn't it work?!
+// app.use(expressEjsLayouts)
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))

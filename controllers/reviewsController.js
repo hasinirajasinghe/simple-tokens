@@ -1,4 +1,3 @@
-const Product = require('../models/product')
 const Review = require('../models/review')
 
 // Fetches all the reviews 
@@ -14,6 +13,7 @@ const getAllReviews = (req,res) => {
 
 // Offers a form to create new review
 const showNewReviewPage = (req,res) => {
+    
     res.render('new_review')
 }
 

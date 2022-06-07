@@ -7,8 +7,7 @@ const getAllProducts = (req, res) => {
             res.status(400).json(err)
             return
         }
-        // res.render('homepage', {products})
-        res.json(products)
+        res.render('homepage', {products}) 
     })
 }
 
@@ -19,7 +18,7 @@ const showProduct = (req,res) => {
             res.status(400).json(err)
             return
         }
-        res.json(product)
+        res.render('product_detail_page', {product})
     })
 }
 

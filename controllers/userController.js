@@ -49,11 +49,25 @@ const getUserById = (req,res) => {
     })
 }
 
+const addToCart = (req,res) => {
+    console.log('made it')
+    User.findById(req.params.id, (err,user) => {
+        if(err) {
+            res.status(400).json(err)
+            return
+        }
+        user.cart.push(req.body)
+        user.save()
+        res.redirect('/')
+    })
+}
+
 module.exports = {
     getAllUsers,
     showSignUpPage,
     createNewUser,
     showLogInPage,
     logInUser,
-    getUserById 
+    getUserById, 
+    addToCart 
 }

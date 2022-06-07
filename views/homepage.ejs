@@ -1,0 +1,18 @@
+<%- include('../views/partials/header.ejs') %> 
+
+<header>
+    <img src="/images/Logo.png" alt="SimpleTokens Logo">
+    <h3>~ Share Joy Through Handmade Cards ~</h3>
+</header>
+
+<main>
+    <% products.forEach((product) => { %>
+        <div class="homepage-product-container">
+            <img src="<%= product.imagePath %> " alt="product-image"><br>
+            <a href="/products/<%=product._id%>"><%= product.name %></a><br>
+            <p>$<%= product.price %></p><br>
+        </div>
+    <% }) %> 
+</main>
+
+<%- include('../views/partials/footer.ejs') %>

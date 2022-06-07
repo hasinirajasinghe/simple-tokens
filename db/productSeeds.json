@@ -1,71 +1,91 @@
 [
     {
         "name": "Thank You Card",
+        "description": "Dimensions: ",
         "imagePath": "/images/thank-you-card/tyc_image 1.JPG",
         "price": 5.15
     },
     {
         "name": "Morther's Day Card",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/mothers-day-card/mothers-day-card_image 1.png",
         "price": 5.15
     },
     {
+        "name": "Baby Card",
+        "description": "Dimensions: 4 x 2.75 inch",
+        "imagePath": "/images/baby-card/baby-card_image 1.png",
+        "price": 5.15
+    },
+    {
         "name": "Graduation Card",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/graduation-card/graduation-card_image 1.png",
         "price": 5.15
     },
     {
         "name": "Anniversary Card",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/anniversary-card/anni-card_image 1.png",
         "price": 5.15
     },
     {
         "name": "Holiday Card",
+        "description": "Dimensions: ",
         "imagePath": "/images/holiday-card/holiday-card_image 1.png",
         "price": 5.15
     },
     {
         "name": "Christmas Card",
+        "description": "Dimensions: ",
         "imagePath": "/images/holiday-card/christmas-card_image 1.png",
         "price": 5.15
     },
     {
         "name": "Could you be any older?",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-birthday/friends-card-birthday.png",
         "price": 5.15
     },
     {
         "name": "You're my Lobster!",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-anniversary/friends-card-anniversary.png",
         "price": 5.15
     },
     {
         "name": "PIVOT!",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-pivot/friends-card-pivot.png",
         "price": 5.15
     },
     {
         "name": "Welcome Little One!",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-baby/friends-card-baby.png",
         "price": 5.15
     },
     {
         "name": "How You Doin?",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-howyoudoin/friends-card-howyoudoin.png",
         "price": 5.15
     },
     {
         "name": "Welcome to the real world",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-graduation/friends-card-graduation.png",
         "price": 5.15
     },
     {
         "name": "Friendship",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-friendship/friends-card-frienship.png",
         "price": 5.15
     },
     {
         "name": "Holiday tunes by Phoebe Buffay",
+        "description": "Dimensions: 4 x 2.75 inch",
         "imagePath": "/images/friends-card-holidays/friends-card-holidays.png",
         "price": 5.15
     }

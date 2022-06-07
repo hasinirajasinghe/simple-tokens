@@ -17,7 +17,11 @@ router.get('/log-in', userCtrl.showLogInPage)
 // Logs in the user
 router.post('/log-in', userCtrl.logInUser)
 
+// Add to cart
+router.put('/:id/shopping-cart', userCtrl.addToCart)
+
 // Fetches user by user ID 
 router.get('/:id', userCtrl.getUserById)
+
 
 module.exports = router
