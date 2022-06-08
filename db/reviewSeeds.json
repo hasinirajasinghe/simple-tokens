@@ -1,16 +1,16 @@
 [
     {
-        "userId": "cb2004",
+        "name": "Chandler",
         "productId": "fb2022",
         "rating": 4, 
         "reviewText": "Could this card be anymore awesome",
-        "timeStamp": "2022-06-04 13:46:30" 
+        "timestamp": "2022-06-04 13:46:30" 
     },
     {
-        "userId": "jt2004",
+        "name": "Joey",
         "productId": "hydc2022",
         "rating": 3.5, 
         "reviewText": "How you doin?",
-        "timeStamp":  "2022-06-05 13:46:30" 
+        "timestamp":  "2022-06-05 13:46:30" 
     }
 ]

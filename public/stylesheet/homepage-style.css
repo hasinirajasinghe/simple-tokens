@@ -1,0 +1,55 @@
+header {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#simple-tokens-logo{
+    height: 250px;
+}
+
+.business-motto {
+    margin: 0 0 15px 0;
+}
+
+.body-section {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    font-weight:800;
+    width: 100%;
+    text-align: center;
+}
+
+.homepage-product-container {
+    height: 380px;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #d28c4c;
+    padding: 10px;
+    margin: 10px;
+    vertical-align: middle;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 16%);
+}
+
+.product-image {
+    height: 300px;
+}
+
+.product-info {
+    text-decoration: none;
+    font-weight: bold;
+    color:  #d28c4c;
+}
+
+#loadReviewsButton {
+    font-family: 'Poiret One', cursive;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #d28c4c;
+}
+
+#review-content {
+    margin-top: 50px;
+}

@@ -1,0 +1,73 @@
+#back-arrow {
+    margin: 10px auto;
+}
+
+.back-to-browsing-link {
+    font-family: 'Poiret One', cursive;
+    font-size: 23px;
+    color:  #d28c4c;
+    line-height: 50px;
+}
+
+.back-to-browse-container {
+    display: flex;
+    align-items: center;
+}
+
+#product-detail-page {
+    font-family: 'Poiret One', cursive;
+}
+
+.main-image-container {
+    width: 50%;
+    padding: 30px;
+}
+
+.product-details-container {
+    width: 50%;
+    border-left: 2px solid #d28c4c;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.product-image {
+    width: 500px;
+    float: right;
+}
+
+.column {
+    flex: 50%;
+}
+
+.outer-container {
+    display: flex;
+}
+
+#quantity {
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+
+#add-to-cart {
+    font-family: 'Poiret One', cursive;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #d28c4c;
+}
+
+#review-link {
+    font-size: 22px;
+    color: #d28c4c;
+}
+
+#loadReviewsButton {
+    font-family: 'Poiret One', cursive;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #d28c4c;
+}
+
+#review-content {
+    text-align: center;
+    margin-top: 30px;
+}

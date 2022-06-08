@@ -13,17 +13,18 @@ const getAllReviews = (req,res) => {
 
 // Offers a form to create new review
 const showNewReviewPage = (req,res) => {
-    
-    res.render('new_review')
+    res.render('new_review', {productId: req.params.productId})
 }
 
 // Creates new review 
 const createNewReview = (req,res) => {
+    req.body.timestamp = Date.now();
     Review.create(req.body, (err, review) => {
         if (err){
             res.status(400).json(err)
             return
         }
+        
         res.redirect(`/products/${review.productId}`)
     })
 }

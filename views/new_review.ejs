@@ -1,17 +1,23 @@
 <%- include('../views/partials/header.ejs') %> 
 
+<link rel="stylesheet" href="/stylesheet/new-review-style.css">
+
 <section id="new-review-page">
-    <form action="/reviews" method="POST">
-        <input type="hidden" name="productId" value="<%= productId %>"
-        <label for="rating">Rating</label>
-        <select name="rating" id="rating">
-            <% for( let i = 1; i <= 5; i++ ) { %>
-                <option value="<%= i %>"><%= i %></option>
-            <% } %>
-        </select><br>
-        <textarea name="reviewText" id="review-text" cols="50" rows="10"></textarea>
-        <button>Submit Review</button>
-    </form>
+    <div id="new-review-container">
+        <form action="/reviews" method="POST">
+            <input type="hidden" name="productId" value="<%= productId %>">
+            <label for="rating" id="rating-label">Rating</label>
+            <select name="rating" id="rating">
+                <% for( let i = 1; i <= 5; i++ ) { %>
+                    <option value="<%= i %>"><%= i %></option>
+                <% } %>
+            </select><br>
+            <textarea name="reviewText" id="review-text" cols="50" rows="5"></textarea>
+            <div>
+                <button id="submit-button">Submit Review</button>
+            </div>
+        </form>
+    </div>
 </section>
 
 <%- include('../views/partials/footer.ejs') %>

@@ -1,28 +1,43 @@
 <%- include('../views/partials/header.ejs') %> 
 
-<section id="product-detail-page">
-    <img src="/images/back-arrow.png" alt="back-arrow">
-    <a href="/">Back to Browsing</a>
-    <div>
-        <img src="<%= product.imagePath %>" alt="product-image"><br>
+<link rel="stylesheet" href="/stylesheet/product-detail-page-style.css">
+<script defer src="/scripts/product-detail-page.js"></script>
+
+<section>
+    <div class="back-to-browse-container">
+        <a href="/">
+            <img src="/images/back-arrow.png" alt="back-arrow" id="back-arrow">
+        </a>
+        <a href="/" class="back-to-browsing-link">Back to Browsing</a>
     </div>
-    <div>
-        <h2><%= product.name %></h2>
-        <p><%= product.description %></p>
-        <p>$<%= product.price %></p>
-        <!-- TODO: Change id to ejs -->
-        <form action="/users/:id/shopping-cart?_method=PUT" method="POST">
-            <label for="quantity">Quantity</label><br>
-            <input name="name" type="hidden" value="<%= product.name %>"/>
-            <input name="price" type="hidden" value="<%= product.price %>"/>
-            <select name="quantity" id="quantity">
-                <% for( let i = 1; i <= 10; i++ ) { %>
-                    <option value="<%= i %>"><%= i %></option>
-                <% } %>
-            </select><br>
-            <input type="submit" value="Add to cart">
-        </form>
-        <a href="/reviews/new">Write a Review</a>
+</section>
+
+<section id="product-detail-page">
+    <div class="outer-container">
+        <div class="main-image-container column">
+            <img src="<%= product.imagePath %>" alt="product-image" class="product-image"><br>
+        </div>
+        <div class="product-details-container column">
+            <h2><%= product.name %></h2>
+            <p><%= product.description %></p>
+            <p>$<%= product.price %></p>
+            <!-- TODO: Change id to ejs -->
+            <form action="/users/:id/shopping-cart?_method=PUT" method="POST">
+                <label for="quantity">Quantity</label><br>
+                <input name="name" type="hidden" value="<%= product.name %>"/>
+                <input name="price" type="hidden" value="<%= product.price %>"/>
+                <select name="quantity" id="quantity">
+                    <% for( let i = 1; i <= 10; i++ ) { %>
+                        <option value="<%= i %>"><%= i %></option>
+                    <% } %>
+                </select><br>
+                <input type="submit" value="Add to cart" id="add-to-cart">
+            </form><br>
+            <a href="/reviews/<%= product._id %>/new" id="review-link">Write a Review</a>
+        </div>
+    </div>
+    <div id="review-content">
+        <button id="loadReviewsButton" onclick="loadReviews('<%= product._id %>')">View Reviews</button>
     </div>
 </section>
 

@@ -1,7 +1,7 @@
 const Product = require('../models/product')
 
 // Fetch all the products 
-const getAllProducts = (req, res) => {
+const getAllProducts = async (req, res) => {
     Product.find({}, (err, products) => {
         if (err) {
             res.status(400).json(err)

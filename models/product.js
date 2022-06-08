@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
 
+// TODO: reviews and embeded 
+
 const productSchema = new mongoose.Schema ({
     name: String,
     description: String,
