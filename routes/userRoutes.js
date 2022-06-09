@@ -12,6 +12,7 @@ router.get('/sign-up', userCtrl.showSignUpPage)
 router.post('/', userCtrl.createNewUser)
 
 // Offers a new form to log in 
+// Use it for local 
 router.get('/log-in', userCtrl.showLogInPage)
 
 // Logs in the user

@@ -11,6 +11,7 @@ const userSchema = new mongoose.Schema ({
     lastname: String, 
     email: String,
     password: String,
+    googleId: String,
     cart: [productSchema]
 })
 
