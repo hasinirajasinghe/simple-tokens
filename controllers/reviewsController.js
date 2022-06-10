@@ -13,12 +13,16 @@ const getAllReviews = (req,res) => {
 
 // Offers a form to create new review
 const showNewReviewPage = (req,res) => {
-    res.render('new_review', {productId: req.params.productId})
+    res.render('new_review', {productId: req.params.productId, user: req.user})
 }
 
 // Creates new review 
 const createNewReview = (req,res) => {
+    console.log(req.body)
     req.body.timestamp = Date.now();
+    req.body.userId = req.user._id;
+    req.body.name = req.user.name;
+    console.log(req.body)
     Review.create(req.body, (err, review) => {
         if (err){
             res.status(400).json(err)
@@ -49,7 +53,7 @@ const editReview = (req,res) => {
             res.status(400).json(err)
             return
         }
-        res.render('edit_review', review)
+        res.render('edit_review', {review, user: req.user})
     }) 
 }
 

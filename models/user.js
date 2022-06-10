@@ -7,8 +7,7 @@ const productSchema = new mongoose.Schema ({
 })
 
 const userSchema = new mongoose.Schema ({
-    firstname: String, 
-    lastname: String, 
+    name: String, 
     email: String,
     password: String,
     googleId: String,

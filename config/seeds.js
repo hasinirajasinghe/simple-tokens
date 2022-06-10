@@ -1,3 +1,4 @@
+require('dotenv').config()
 require('./connection')
 const User = require('../models/user')
 const Product = require('../models/product')

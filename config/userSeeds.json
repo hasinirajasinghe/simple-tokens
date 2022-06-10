@@ -1,42 +1,36 @@
 [
     {
-        "firstname": "Chandler", 
-        "lastname": "Bing", 
+        "name": "Chandler Bing", 
         "email": "chandler.bing@gmail.com",
         "password": "bing",
         "cart": []
     },
     {
-        "firstname": "Joe", 
-        "lastname": "Tribbiani", 
+        "name": "Joe Tribbiani", 
         "email": "joe.tribbiani@gmail.com",
         "password": "pizza", 
         "cart": []
     },
     {
-        "firstname": "Ross", 
-        "lastname": "Geller", 
+        "name": "Ross Geller", 
         "email": "ross.geller@gmail.com",
         "password": "pivot",
         "cart": [] 
     },
     {
-        "firstname": "Rachel", 
-        "lastname": "Green", 
+        "name": "Rachel Green", 
         "email": "rachel.green@gmail.com",
         "password": "rachem",
         "cart": [] 
     },
     {
-        "firstname": "Monica", 
-        "lastname": "Geller", 
+        "name": "Monica Geller", 
         "email": "monica.geller@gmail.com",
         "password": "ilovecleaning",
         "cart": [] 
     },
     {
-        "firstname": "Phoebe", 
-        "lastname": "Buffay", 
+        "name": "Phoebe Buffay", 
         "email": "phoebe.buffay@gmail.com",
         "password": "guitar", 
         "cart": [] 

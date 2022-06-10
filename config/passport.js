@@ -15,12 +15,15 @@ passport.use(new GoogleStrategy({
         return cb(null, user)
       } else {
         var newUser = new User({
-          name: profile.newUser,
+          // you can find all the profile properties by console logging it
+          name: profile.displayName,
           email: profile.emails[0].value,
           googleId: profile.id
         })
         newUser.save(function(err) {
-          if (err) return cb(err);
+          if (err) {
+            return cb(err);
+          } 
           return cb(null, newUser);
         })
       }
