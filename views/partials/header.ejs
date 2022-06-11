@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheet/nav-bar-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
         </style>        
@@ -14,8 +15,22 @@
     <nav class="main-nav-bar">
         <a href="/" id="business-name">SimpleTokens</a>
         <% if (user) { %>
-            <h6 id="user-welcome">Welcome, <%= user.name.split(" ")[0] %></h6>
-            <a href="/logout">Log Out</a>
+            <div>
+                <a href="/<%= user._id %> /shopping-cart">
+                    <img src="/images/shopping-carrt.png" alt="shopping-cart" id="shopping-cart">
+                </a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Welcome, <%= user.name.split(" ")[0] %>
+                        <i class="fa fa-caret-down"></i> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/logout">Log Out</a>
+                    </div>
+                  </div> 
+                <div>   
+            </div>
         <% } else { %>
             <a href="/auth/google" id="log-in">Log In</a>
         <% } %> 
