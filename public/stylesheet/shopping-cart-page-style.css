@@ -1,0 +1,33 @@
+#back-arrow {
+    margin: 10px auto;
+}
+
+.back-to-browsing-link {
+    font-family: 'Poiret One', cursive;
+    font-size: 23px;
+    color:  #d28c4c;
+    line-height: 50px;
+}
+
+.back-to-browse-container {
+    display: flex;
+    align-items: center;
+}
+
+#page-title {
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cart-item-details {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.shopping-cart-titles {
+    
+}
+

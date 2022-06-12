@@ -1,11 +1,53 @@
 <%- include('../views/partials/header.ejs') %> 
 
+<link rel="stylesheet" href="/stylesheet/shopping-cart-page-style.css">
+
 <section>
-    <h1>SHopping Cart</h1>
+    <section>
+        <div class="back-to-browse-container">
+            <a href="/">
+                <img src="/images/back-arrow.png" alt="back-arrow" id="back-arrow">
+            </a>
+            <a href="/" class="back-to-browsing-link">Back to Browsing</a>
+        </div>
+    </section>
 </section>
 
 <section>
-    
+    <h1 id="page-title">Shopping Cart</h1>
+</section>
+
+<section>
+    <div class="cart-item-details">
+        <table>
+            <tr class="shopping-cart-titles">
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Delete Item</th>
+            </tr>
+            <% let subTotal = 0 %> 
+            <% user.cart.forEach(product => { %>
+                <tr>
+                    <td><%=product.name%></td>
+                    <td><%=product.quantity%></td>
+                    <td>$<%=product.price%></td>
+                    <td>
+                        <form action="/users/<%= user._id%>/shopping-cart?_method=DELETE" method="POST">
+                            <input name="name" type="hidden" value="<%= product.name %>"/>
+                            <input type="submit" value="Delete">
+                        </form>
+                    </td>
+                </tr>
+                <% subTotal = subTotal + (parseInt(product.quantity) * parseFloat(product.price)) %> 
+            <% }) %>
+            <tr>
+                <td>Subtotal</td>
+                <td></td>
+                <td>$<%= subTotal.toFixed(2) %></td>
+            </tr>
+        </table>
+    </div>
 </section>
 
 <%- include('../views/partials/footer.ejs') %>

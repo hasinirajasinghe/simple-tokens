@@ -1,5 +1,26 @@
 <%- include('../views/partials/header.ejs') %> 
 
+<section>
+    <h1>Edit Review</h1>
+</section>
 
+<section>
+    <form action="/reviews/<%=review._id%>?_method=PUT" method="POST">
+        <label for="rating" id="rating-label">Rating</label>
+        <select name="rating" id="rating" >
+            <% for( let i = 1; i <= 5; i++ ) { %>
+                <% if (review.rating === i) { %>
+                    <option value="<%= i %>" selected><%= i %></option>
+                <% } else { %>
+                    <option value="<%= i %>"><%= i %></option>
+                <% } %>
+            <% } %>
+        </select><br>
+        <textarea name="reviewText" id="review-text" cols="50" rows="5"><%= review.reviewText %> </textarea>
+        <div>
+            <button id="submit-button">Save Review</button>
+        </div>
+    </form>
+</section>
 
 <%- include('../views/partials/footer.ejs') %>

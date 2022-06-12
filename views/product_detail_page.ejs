@@ -21,8 +21,8 @@
             <h2><%= product.name %></h2>
             <p><%= product.description %></p>
             <p>$<%= product.price %></p>
-            <!-- TODO: Change id to ejs -->
-            <form action="/users/:id/shopping-cart?_method=PUT" method="POST">
+            <!-- If the user is not logged in then the add to cart button should make them log in -->
+            <form action=<%= user ? `/users/${user._id}/shopping-cart?_method=PUT` : "/auth/google?_method=GET"%> method="POST">
                 <label for="quantity">Quantity</label><br>
                 <input name="name" type="hidden" value="<%= product.name %>"/>
                 <input name="price" type="hidden" value="<%= product.price %>"/>
@@ -33,11 +33,11 @@
                 </select><br>
                 <input type="submit" value="Add to cart" id="add-to-cart">
             </form><br>
-            <a href="/reviews/<%= product._id %>/new" id="review-link">Write a Review</a>
+            <a href=<%= user ? `/reviews/${product._id}/new`: "/auth/google" %> id="review-link">Write a Review</a>
         </div>
     </div>
     <div id="review-content">
-        <button id="loadReviewsButton" onclick="loadReviews('<%= product._id %>')">View Reviews</button>
+        <button id="loadReviewsButton" onclick="loadReviews('<%= product._id %>', '<%= user? user._id : undefined %>')">View Reviews</button>
     </div>
 </section>
 
