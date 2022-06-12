@@ -53,3 +53,34 @@ header {
 #review-content {
     margin-top: 50px;
 }
+
+.all-reviews-container {
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #d28c4c;
+    vertical-align: middle;
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 16%);
+}
+
+.review-row {
+    text-align: left;
+}
+
+.review-column1 {
+    text-align: center;
+    border-bottom: 1px solid #d28c4c;
+    padding: 10px 10px;
+}
+
+.review-column2 {
+    text-align: center;
+    background-color: #c99360;
+    padding: 10px 10px;
+}
+
+.review-column3 {
+    text-align: left;
+    background-color: #d28c4c;
+    padding: 10px 10px;
+}
+

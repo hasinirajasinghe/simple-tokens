@@ -31,13 +31,13 @@
     },
     {
         "name": "Holiday Card",
-        "description": "Dimensions: 4 x 6 inch",
+        "description": "Dimensions: 6 x 12 inch",
         "imagePath": "/images/holiday-card/holiday-card_image 1.png",
         "price": 5.15
     },
     {
         "name": "Christmas Card",
-        "description": "Dimensions: 4 x 6 inch",
+        "description": "Dimensions: 6 x 12 inch",
         "imagePath": "/images/holiday-card/christmas-card_image 1.png",
         "price": 5.15
     },

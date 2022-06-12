@@ -27,7 +27,35 @@
     text-align: center;
 }
 
-.shopping-cart-titles {
-    
+.cart-table {
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #d28c4c;
 }
 
+.shopping-cart-titles {
+    text-align: center;
+    background-color: #d28c4c;
+    padding: 10px 10px;
+}
+
+.cart-item {
+    padding: 10px 10px;
+}
+
+.item-subtotal {
+    color: #c99360;
+    padding: 18px 15px;
+}
+
+.subtotal-amount {
+    color: #c99360;
+}
+
+#delete-item {
+    font-family: 'Poiret One', cursive;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #d28c4c;
+    margin: auto 20px;
+}

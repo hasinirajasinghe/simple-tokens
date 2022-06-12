@@ -19,32 +19,32 @@
 
 <section>
     <div class="cart-item-details">
-        <table>
-            <tr class="shopping-cart-titles">
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Delete Item</th>
+        <table class="cart-table">
+            <tr>
+                <th class="shopping-cart-titles">Item</th>
+                <th class="shopping-cart-titles">Quantity</th>
+                <th class="shopping-cart-titles">Price</th>
+                <th></th>
             </tr>
             <% let subTotal = 0 %> 
             <% user.cart.forEach(product => { %>
                 <tr>
-                    <td><%=product.name%></td>
-                    <td><%=product.quantity%></td>
-                    <td>$<%=product.price%></td>
+                    <td class="cart-item"><%=product.name%></td>
+                    <td class="cart-item"><%=product.quantity%></td>
+                    <td class="cart-item">$<%=product.price%></td>
                     <td>
                         <form action="/users/<%= user._id%>/shopping-cart?_method=DELETE" method="POST">
                             <input name="name" type="hidden" value="<%= product.name %>"/>
-                            <input type="submit" value="Delete">
+                            <input type="submit" value="Delete" id="delete-item">
                         </form>
                     </td>
                 </tr>
                 <% subTotal = subTotal + (parseInt(product.quantity) * parseFloat(product.price)) %> 
             <% }) %>
             <tr>
-                <td>Subtotal</td>
+                <td class="item-subtotal">Subtotal</td>
                 <td></td>
-                <td>$<%= subTotal.toFixed(2) %></td>
+                <td class="subtotal-amount">$<%= subTotal.toFixed(2) %></td>
             </tr>
         </table>
     </div>
