@@ -27,7 +27,12 @@ app.use(cookieParser())
 app.use(session({
     secret: 'CoolCards',
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
+    // try to keep user logged in for 1 hour???
+    cookie: {
+        secure: false,
+        maxAge: 3600000 //1 hour
+    }
   }))
 app.use(passport.initialize());
 app.use(passport.session());

@@ -7,7 +7,9 @@ function loadReviews() {
     reviewContent.append(reviewTable)
     // makes a request to the server to fetch all reviews. Essentially a GET request. 
     fetch('/reviews/', { method: 'GET'})
+    // resolve the promise from fetch
     .then(res => res.json())
+    // resolve the promise from res.json()
     .then(jsonData => {
         jsonData.forEach(review => {
             let reviewRow = document.createElement('tr');

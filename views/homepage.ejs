@@ -11,7 +11,8 @@
         <% products.forEach((product) => { %>
             <div class="homepage-product-container">
                 <a href="/products/<%=product._id%>">
-                    <img src="<%= product.imagePath %> " alt="product-image" class="product-image"><br>
+                    <!-- Load the first image only. All products have at least one image. -->
+                    <img src="<%= product.imagePath[0] %>" alt="product-image" class="product-image"><br>
                 </a>
                 <a href="/products/<%=product._id%>" class="product-info"><%= product.name %></a><br>
                 <p class="product-info">$ <%= product.price %></p><br>

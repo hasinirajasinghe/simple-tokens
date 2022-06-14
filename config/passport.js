@@ -5,6 +5,7 @@ const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_SECRET,
+    // google callback is the page that needs to load after the user signs in, google will redirect the user to this page
     callbackURL: process.env.GOOGLE_CALLBACK
   },
   function(accessToken, refreshToken, profile, cb) {

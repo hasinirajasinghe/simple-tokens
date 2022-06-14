@@ -6,12 +6,15 @@ const addToCart = (req,res) => {
             res.status(400).json(err)
             return
         }
-        console.log(req.body)
+
         let productName = req.body.name
+        // check if the product was already part of the cart
         let productFound = user.cart.find((cartItem) => cartItem.name === productName)
+        // if the product was part of the cart then just increase the existing quantity by the new quantity they wanted
         if (productFound) {
             productFound.quantity += parseInt(req.body.quantity)
         } else {
+            // The product was not part of the cart so just push in a new item
             user.cart.push(req.body)
         }
         user.save()
@@ -42,7 +45,7 @@ const deleteCartItem = (req,res) => {
         user.cart = filteredCart
         user.save()
 
-        res.redirect(`/users/${req.params.id}/shopping-cart`)
+        res.redirect(`/users/${user._id}/shopping-cart`)
     })
 }
 

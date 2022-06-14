@@ -8,6 +8,7 @@
     margin: 0;
     padding-top: 10px;
     padding-right: 10px;
+    
 }
 
 #business-name {
@@ -26,6 +27,11 @@
 
 body {
     margin: 0px;
+    line-height: normal;
+}
+
+*, ::after, ::before {
+    box-sizing:unset
 }
 
 .dropdown {

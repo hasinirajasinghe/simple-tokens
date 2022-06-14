@@ -13,16 +13,16 @@ const getAllReviews = (req,res) => {
 
 // Offers a form to create new review
 const showNewReviewPage = (req,res) => {
+    // passing the productId to the next page so that it knows which product the review is being written for
     res.render('new_review', {productId: req.params.productId, user: req.user})
 }
 
 // Creates new review 
 const createNewReview = (req,res) => {
-    console.log(req.body)
+    // add in the missing information because it is in the backend
     req.body.timestamp = Date.now();
     req.body.userId = req.user._id;
     req.body.name = req.user.name;
-    console.log(req.body)
     Review.create(req.body, (err, review) => {
         if (err){
             res.status(400).json(err)

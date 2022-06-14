@@ -34,6 +34,7 @@
                     <td class="cart-item">$<%=product.price%></td>
                     <td>
                         <form action="/users/<%= user._id%>/shopping-cart?_method=DELETE" method="POST">
+                            <!-- pass in product name so that the backend knows what to delete from the cart -->
                             <input name="name" type="hidden" value="<%= product.name %>"/>
                             <input type="submit" value="Delete" id="delete-item">
                         </form>
@@ -44,6 +45,7 @@
             <tr>
                 <td class="item-subtotal">Subtotal</td>
                 <td></td>
+                <!-- toFixed(2) show 2 decimal places only! -->
                 <td class="subtotal-amount">$<%= subTotal.toFixed(2) %></td>
             </tr>
         </table>
