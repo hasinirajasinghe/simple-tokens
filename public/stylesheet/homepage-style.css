@@ -66,21 +66,22 @@ header {
     text-align: left;
 }
 
-.review-column1 {
+.all-reviews-container tr td:nth-child(1) {
     text-align: center;
     border-bottom: 1px solid #d28c4c;
     padding: 10px 10px;
 }
 
-.review-column2 {
+.all-reviews-container tr td:nth-child(2) {
     text-align: center;
     background-color: #c99360;
     padding: 10px 10px;
 }
 
-.review-column3 {
+.all-reviews-container tr td:nth-child(3) {
     text-align: left;
     background-color: #d28c4c;
     padding: 10px 10px;
 }
+
 

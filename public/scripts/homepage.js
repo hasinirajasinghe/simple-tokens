@@ -4,7 +4,15 @@ function loadReviews() {
     reviewContent.replaceChildren()
     let reviewTable = document.createElement('table');
     reviewTable.className = 'all-reviews-container'
+
+    // Append review title first before the rest of the table
+    let reviewTitle = document.createElement('h3');
+    reviewTitle.innerText = "Reviews";
+    reviewContent.append(reviewTitle)
+
     reviewContent.append(reviewTable)
+
+    
     // makes a request to the server to fetch all reviews. Essentially a GET request. 
     fetch('/reviews/', { method: 'GET'})
     // resolve the promise from fetch
@@ -16,13 +24,10 @@ function loadReviews() {
             reviewRow.className = 'review-row'
             let reviewName = document.createElement('td')
             reviewName.innerText = review.name
-            reviewName.className = 'review-column1'
             let reviewRating = document.createElement('td')
             reviewRating.innerText = review.rating
-            reviewRating.className = 'review-column2'
             let reviewText = document.createElement('td')
             reviewText.innerText = '"' + review.reviewText + '"'
-            reviewText.className = 'review-column3'
 
             reviewRow.append(reviewName, reviewRating, reviewText);
             reviewTable.append(reviewRow)

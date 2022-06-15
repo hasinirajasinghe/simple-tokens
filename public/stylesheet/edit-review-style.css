@@ -1,0 +1,34 @@
+.edit-review-header {
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.edit-review-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#rating-label {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+
+#rating {
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+
+#review-text {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+#save-button {
+    font-family: 'Poiret One', cursive;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #d28c4c;
+}
