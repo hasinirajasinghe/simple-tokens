@@ -1,0 +1,26 @@
+.instagram-container {
+    margin: 40px 0 0 15px;  
+}
+
+.instagram-label {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    font-weight: 900;
+    color: black;  
+}
+
+.instagram-link-tag {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    font-weight: 900;
+    color:#d28c4c;   
+    text-decoration: none;  
+}
+
+.copyright-tag {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    font-weight: 900;
+    color:black;
+    margin: 5px 0 15px 15px;  
+}

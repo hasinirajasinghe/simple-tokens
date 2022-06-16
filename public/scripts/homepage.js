@@ -26,6 +26,10 @@ function loadReviews() {
             reviewName.innerText = review.name
             let reviewRating = document.createElement('td')
             reviewRating.innerText = review.rating
+            let star = document.createElement('img')
+            star.src = "/images/star-icon.png"
+            star.className = 'star-icon'
+            reviewRating.append(star)
             let reviewText = document.createElement('td')
             reviewText.innerText = '"' + review.reviewText + '"'
 
