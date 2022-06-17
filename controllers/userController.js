@@ -49,8 +49,21 @@ const deleteCartItem = (req,res) => {
     })
 }
 
+const cartCheckout = (req,res) => {
+    User.findById(req.params.id, (err, user) => {
+        if(err) {
+            res.status(400).json(err)
+            return
+        }
+        user.cart = []
+        user.save()
+        res.redirect('/')
+    })
+}
+
 module.exports = {
     addToCart, 
     viewCart, 
-    deleteCartItem
+    deleteCartItem,
+    cartCheckout
 }

@@ -9,16 +9,21 @@ function loadReviews() {
     let reviewTitle = document.createElement('h3');
     reviewTitle.innerText = "Reviews";
     reviewContent.append(reviewTitle)
-
-    reviewContent.append(reviewTable)
-
-    
+   
     // makes a request to the server to fetch all reviews. Essentially a GET request. 
     fetch('/reviews/', { method: 'GET'})
     // resolve the promise from fetch
     .then(res => res.json())
     // resolve the promise from res.json()
     .then(jsonData => {
+
+        // If there are no reviews then show a default message
+        if (jsonData.length === 0) {
+            reviewContent.append("No reviews yet! Be the first to leave one!")
+        } else {
+            reviewContent.append(reviewTable)
+        }
+
         jsonData.forEach(review => {
             let reviewRow = document.createElement('tr');
             reviewRow.className = 'review-row'

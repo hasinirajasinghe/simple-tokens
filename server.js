@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-const PORT = 4000
+const normalizePort = require('normalize-port')
+const PORT = normalizePort(process.env.PORT || '4000');
 const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')

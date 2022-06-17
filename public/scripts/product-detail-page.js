@@ -8,11 +8,18 @@ function loadReviews(productId, userId) {
 
     let reviewTable = document.createElement('table');
     reviewTable.className = 'all-reviews-container'
-    reviewContent.append(reviewTable)
 
     fetch(`/reviews/${productId}`, { method: 'GET'})
     .then(res => res.json())
     .then(jsonData => {
+
+        // If there are no reviews then show a default message
+        if (jsonData.length === 0) {
+            reviewContent.append("No reviews yet! Be the first to leave one!")
+        } else {
+            reviewContent.append(reviewTable)
+        }
+
         jsonData.forEach(review => {
             let reviewRow = document.createElement('tr');
             reviewRow.className = 'review-row'

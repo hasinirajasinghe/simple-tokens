@@ -60,3 +60,10 @@
     background-color: #d28c4c;
     margin: auto 20px;
 }
+
+.purchase-button {
+    font-family: 'Poiret One', cursive;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #d28c4c;
+}

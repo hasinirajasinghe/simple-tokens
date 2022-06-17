@@ -1,16 +1,1 @@
-[
-    {
-        "name": "Chandler",
-        "productId": "fb2022",
-        "rating": 4, 
-        "reviewText": "Could this card be anymore awesome",
-        "timestamp": "2022-06-04 13:46:30" 
-    },
-    {
-        "name": "Joey",
-        "productId": "hydc2022",
-        "rating": 3.5, 
-        "reviewText": "How you doin?",
-        "timestamp":  "2022-06-05 13:46:30" 
-    }
-]
+[]

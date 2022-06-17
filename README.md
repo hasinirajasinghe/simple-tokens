@@ -2,32 +2,38 @@
 
 ## Project Description 
 
-SimpleTokens is an E-commerce website for a small greeting card business. The website allow users to browse and buy greeting cards, as well as sign up for a personal account. With a personal account, the users can post reviews of the products and sahre their thoughts.
+SimpleTokens is an E-commerce website for a small greeting card business. The website allow users to browse and buy greeting cards, as well as sign up for a personal account. With a personal account, the users can post reviews of the products and share their thoughts.
 
 ## Project Images 
-
+- Homepage View 
+- Product Detail View
+- Shopping Cart View
+- New Review Submission View
+- Display Review View
 ## Technologies Used
 - HTML
 - CSS
 - Javascript
-- Express
 - NodeJS
-- MongoDB
+- Express
+- MongoDB/Atlas
+- Postman
+- Heroku
+- Bootstrap
 
 ## User Stories 
-
 ### MVP Goals 
-- s a user, I would like to have the option to signup/login
-- As a user, I would like to browse products, whether logged in or not.
-- As a user, I would like view details of products
-- As a user, I would like to see product reviews
-- As a logged in user,  I would like to have the option to log in/log out
-- As a logged in user, I would like to leave reviews for products
-- As a logged in user, I would like to have the option to add product to the cart
-- As a logged in user,  I would like to view and manage the cart
+- [x] As a user, I would like to have the option to signup/login
+- [x] As a user, I would like to browse products, whether logged in or not.
+- [x] As a user, I would like view details of products
+- [x] As a user, I would like to see product reviews
+- [x] As a logged in user,  I would like to have the option to log in/log out
+- [x]  As a logged in user, I would like to leave reviews for products
+- [x] As a logged in user, I would like to have the option to add product to the cart
+- [x] As a logged in user,  I would like to view and manage the cart
 
 ### Stretch Goals 
-- As a user, I would like to see image carousel for products.
+- [x] As a user, I would like to see image carousel for products.
 - As a user, I would like to see a search function.
 - As a logged in user, I would like to add products to a favorites list.
 - As a logged in user, I would like to see my previous orders.
@@ -52,5 +58,12 @@ Log In View
 ![Log In View](./assets/wireframes/Wireframe%206%20-%20Log%20In%20View.png)
 
 ## Resources Used
+https://developer.mozilla.org/en-US/
+
+https://www.w3schools.com/
+
+https://stackoverflow.com/
+
+https://wireframe.cc/
 
 ## Problems 

@@ -49,6 +49,9 @@
                 <td class="subtotal-amount">$<%= subTotal.toFixed(2) %></td>
             </tr>
         </table>
+        <form action="/users/<%= user._id%>/checkout-shopping-cart?_method=PUT" method="POST">
+            <button class="purchase-button">Purchase</button>
+        </form>
     </div>
 </section>
 

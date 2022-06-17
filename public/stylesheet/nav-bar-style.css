@@ -40,7 +40,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 28px;
+    font-size: 25px;
     font-weight:800;
     border: none;
     outline: none;
@@ -51,23 +51,23 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    width: auto;
     background-color: #d28c4c;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
 .dropdown-content a {
-    font-size: 20px;
+    font-size: 18px;
     float: right;
     color: black;
-    padding: 12px 16px;
+    padding: 10px 30px;
+    padding-right: auto;
     text-decoration: none;
     display: block;
     text-align: right;
@@ -84,4 +84,5 @@ body {
 #shopping-cart {
     float: right;
     height: 30px;
+    margin-left: 10px;
 }

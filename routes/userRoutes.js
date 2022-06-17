@@ -11,4 +11,7 @@ router.get('/:id/shopping-cart', userCtrl.viewCart)
 // Delete cart item 
 router.delete('/:id/shopping-cart', userCtrl.deleteCartItem)
 
+// Empty car
+router.put('/:id/checkout-shopping-cart', userCtrl.cartCheckout)
+
 module.exports = router
