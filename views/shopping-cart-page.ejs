@@ -36,7 +36,7 @@
                         <form action="/users/<%= user._id%>/shopping-cart?_method=DELETE" method="POST">
                             <!-- pass in product name so that the backend knows what to delete from the cart -->
                             <input name="name" type="hidden" value="<%= product.name %>"/>
-                            <input type="submit" value="Delete" id="delete-item">
+                            <input type="submit" value="Remove" id="delete-item">
                         </form>
                     </td>
                 </tr>

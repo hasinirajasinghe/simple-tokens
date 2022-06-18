@@ -5,16 +5,28 @@
 SimpleTokens is an E-commerce website for a small greeting card business. The website allow users to browse and buy greeting cards, as well as sign up for a personal account. With a personal account, the users can post reviews of the products and share their thoughts.
 
 ## Project Images 
-- Homepage View 
-- Product Detail View
-- Shopping Cart View
-- New Review Submission View
-- Display Review View
+Homepage View
+![Homepage View](./assets/project-images/homepage.png) 
+
+Product Detail View
+![Product Detail View](./assets/project-images/product-detail-page.png)
+
+Shopping Cart View
+![Shopping Cart View](./assets/project-images/shopping-cart-page.png)
+
+New Review Submission View
+![New Review Submission View](./assets/project-images/new-review-submission-page.png)
+
+Display Review View
+![Display Review View](./assets/project-images/show-review-page.png)
+
+Log In Page (via Google)
+![Log In Page](./assets/project-images/log-in-page.png)
 ## Technologies Used
-- HTML
-- CSS
+- HTML/EJS
 - Javascript
 - NodeJS
+- CSS
 - Express
 - MongoDB/Atlas
 - Postman
@@ -66,4 +78,7 @@ https://stackoverflow.com/
 
 https://wireframe.cc/
 
+https://icons8.com/icons/set/favicon
+
 ## Problems 
+Originally, the goal was to have a sign up page (seperate to the log in page) that was local to the business per se. However with the complexity of building a form that would request user information and store data with encryption came with challenges. Google OAuth was used instead to overcome this challege. 
