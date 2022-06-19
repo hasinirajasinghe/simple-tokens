@@ -4,6 +4,8 @@
 
 SimpleTokens is an E-commerce website for a small greeting card business. The website allow users to browse and buy greeting cards, as well as sign up for a personal account. With a personal account, the users can post reviews of the products and share their thoughts.
 
+Website link: 
+
 ## Project Images 
 Homepage View
 ![Homepage View](./assets/project-images/homepage.png) 
@@ -32,7 +34,6 @@ Log In Page (via Google)
 - Postman
 - Heroku
 - Bootstrap
-
 ## User Stories 
 ### MVP Goals 
 - [x] As a user, I would like to have the option to signup/login
@@ -46,11 +47,10 @@ Log In Page (via Google)
 
 ### Stretch Goals 
 - [x] As a user, I would like to see image carousel for products.
-- As a user, I would like to see a search function.
-- As a logged in user, I would like to add products to a favorites list.
-- As a logged in user, I would like to see my previous orders.
+- [ ] As a user, I would like to see a search function.
+- [ ] As a logged in user, I would like to add products to a favorites list.
+- [ ] As a logged in user, I would like to see my previous orders.
 ## Wireframes 
-
 Homepage View
 ![Homepage View](./assets/wireframes/Wireframe%201%20-%20Homepage%20View.png)
 
@@ -81,4 +81,4 @@ https://wireframe.cc/
 https://icons8.com/icons/set/favicon
 
 ## Problems 
-Originally, the goal was to have a sign up page (seperate to the log in page) that was local to the business per se. However with the complexity of building a form that would request user information and store data with encryption came with challenges. Google OAuth was used instead to overcome this challege. 
+Originally, the goal was to have a sign up page (separate to the log in page) that was local to the business per se. However with the complexity of building a form that would request user information and store data with encryption came with challenges. Google OAuth was used instead to overcome this challege. 

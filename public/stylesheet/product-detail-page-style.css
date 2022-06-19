@@ -36,6 +36,10 @@
     float: right;
 }
 
+.carousel-container {
+    float: right;
+}
+
 .column {
     flex: 50%;
 }
