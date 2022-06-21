@@ -4,7 +4,7 @@
 
 SimpleTokens is an E-commerce website for a small greeting card business. The website allow users to browse and buy greeting cards, as well as sign up for a personal account. With a personal account, the users can post reviews of the products and share their thoughts.
 
-Website link: 
+Website link: https://simple-tokens.herokuapp.com/
 
 ## Project Images 
 Homepage View

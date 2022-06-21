@@ -1,4 +1,4 @@
-
+// Used script because only want to show the reviews upon user's click. 
 function loadReviews() {
     let reviewContent = document.getElementById('review-content')
     reviewContent.replaceChildren()

@@ -7,6 +7,7 @@ const getAllReviews = (req,res) => {
             res.status(400).json(err)
             return
         }
+        // return json response because scripts are being used to display all reviews.
         res.json(reviews)
     })
 }
@@ -36,8 +37,6 @@ const createNewReview = (req,res) => {
 // Fetches reviews for a product by product ID
 const getAllReviewsForProduct = (req,res) => {
     Review.find({productId: req.params.productId}, (err,reviews) => {
-        console.log(req.params.productId)
-        console.log(reviews)
         if (err) {
             res.status(400).json(err)
             return
@@ -75,7 +74,6 @@ const deleteReview = (req,res) => {
             res.status(400).json(err)
             return
         }
-        console.log(review.productId)
         res.redirect(`/products/${review.productId}`)
     })
 }

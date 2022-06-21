@@ -40,7 +40,6 @@ const deleteCartItem = (req,res) => {
         }
 
         let productName = req.body.name
-
         let filteredCart = user.cart.filter((cartItem) => cartItem.name !== productName)
         user.cart = filteredCart
         user.save()

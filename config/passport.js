@@ -1,3 +1,4 @@
+// Try to have the user log in through google and save their data to the database. 
 const passport = require('passport')
 const User = require('../models/user')
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
@@ -8,11 +9,11 @@ passport.use(new GoogleStrategy({
     // google callback is the page that needs to load after the user signs in, google will redirect the user to this page
     callbackURL: process.env.GOOGLE_CALLBACK
   },
+  // call back function to check if they're an existing user, if not create a new user
   function(accessToken, refreshToken, profile, cb) {
     User.findOne({ 'googleId': profile.id }, function(err, user) {
       if (err) return cb(err)
       if (user) {
-        console.log(profile)
         return cb(null, user)
       } else {
         var newUser = new User({

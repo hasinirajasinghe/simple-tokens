@@ -1,3 +1,4 @@
+// Used script because only want to show the reviews upon user's click. 
 function loadReviews(productId, userId) {
     let reviewContent = document.getElementById('review-content')
     reviewContent.replaceChildren()
@@ -23,6 +24,7 @@ function loadReviews(productId, userId) {
         jsonData.forEach(review => {
             let reviewRow = document.createElement('tr');
             reviewRow.className = 'review-row'
+            let reviewTimestamp = document.createElement('td')
             let reviewName = document.createElement('td')
             reviewName.innerText = review.name
             let reviewRating = document.createElement('td')
@@ -33,8 +35,11 @@ function loadReviews(productId, userId) {
             reviewRating.append(star)
             let reviewText = document.createElement('td')
             reviewText.innerText = '"' + review.reviewText + '"'
-
-            reviewRow.append(reviewName, reviewRating, reviewText);
+            let timestamp = new Date(review.timestamp)
+            // Increment month by 1 because it starts at 0
+            reviewTimestamp.innerText = `${timestamp.getMonth() + 1}/${timestamp.getDate()}/${timestamp.getFullYear()}`
+            
+            reviewRow.append(reviewName, reviewRating, reviewText, reviewTimestamp);
 
             // If the user is logged in
             // Show the edit and delete buttons only for the review the user wrote
